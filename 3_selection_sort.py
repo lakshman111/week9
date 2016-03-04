@@ -2,9 +2,13 @@
 import random
 
 def sort(items):
+  # arbitrarily pick the first item as the min
   for position in range(0, len(items)):
     min_position_so_far = position
 
+    # then iterate throught the rest of the list
+    # reason it is nexted is becuase it is building up order
+    # a good visualization on the link above
     for z in range(position+1, len(items)):
       if items[z] < items[min_position_so_far]:
         min_position_so_far = z

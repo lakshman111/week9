@@ -3,7 +3,10 @@ b = 50
 
 # TO DO: Swap the values of a and b.
 # (No hardcoding allowed, of course).
+a,b = b,a
 
+print(a)
+print(b)
 
 
 
