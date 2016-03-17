@@ -7,12 +7,13 @@ def sort(items):
     min_position_so_far = position
 
     # then iterate throught the rest of the list
-    # reason it is nexted is becuase it is building up order
+    # reason it is nested is becuase it is building up order
     # a good visualization on the link above
     for z in range(position+1, len(items)):
       if items[z] < items[min_position_so_far]:
         min_position_so_far = z
 
+    # swap the minimum into the current position
     if position != min_position_so_far:
       temp = items[position]
       items[position] = items[min_position_so_far]

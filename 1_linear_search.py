@@ -13,6 +13,7 @@ def find(items, item):
   # return False
 
   # better way he wrote it
+  # this is better because the program stops when it finds it
   position = 0
   found = False
   while (position < len(items) and not found):
